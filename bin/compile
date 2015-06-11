@@ -153,6 +153,7 @@ fi
 # install compass
 status "Installing Compass"
 if [ "$STACK" == "cedar-14" ]; then
+  rm -rf $cache_dir/ruby
   export GEM_HOME=$build_dir/ruby/.gem/ruby/2.2.0
 else
   export GEM_HOME=$build_dir/ruby/.gem/ruby/1.9.1
